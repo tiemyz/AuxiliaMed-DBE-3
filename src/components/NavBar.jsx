@@ -14,32 +14,30 @@ export default function NavBar({ active }) {
             <ul id="links" className="flex items-center gap-14 text-black font-jura text-2xl font-bold">
 
                 <li>
-                    <Link className={`hover:text-white ${active === "contas" && "text-slate-100"}`} href="/auxiliador">
+                    <Link className={`hover:text-white ${active === "auxiliador" && "text-slate-100"}`} href="/auxiliador">
                         AUXILIADOR DIGITAL
                     </Link>
                 </li>
 
                 <li>
-                    <Link className={`hover:text-white ${active === "contas" && "text-slate-100"}`} href="/hospitais">
+                    <Link className={`hover:text-white ${active === "hospitais" && "text-slate-100"}`} href="/hospitais">
                         HOSPITAIS
                     </Link>
                 </li>
 
                 <li>
-                    <Link className={`hover:text-white ${active === "contas" && "text-slate-100"}`} href="/consultorios">
+                    <Link className={`hover:text-white ${active === "consultorios" && "text-slate-100"}`} href="/consultorios">
                         CONSULTÓRIOS
                     </Link>
                 </li>
                 
                 <li>
-                    <Link className={`hover:text-white ${active === "contas" && "text-slate-100"}`} href="/saibamais">
+                    <Link className={`hover:text-white ${active === "saibamais" && "text-slate-100"}`} href="/saibamais">
                         SAIBA MAIS
                     </Link>
                 </li>
                 
             </ul>
-
- 
         </nav>
     )
 }

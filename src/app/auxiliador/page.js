@@ -1,12 +1,6 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
-/*async function getContas(){
-  const url = "http://localhost:8080/api/v1/conta"
-  const resp = await fetch(url, { next: { revalidate: 0 } })
-  return resp.json()
-}*/
-
 export default function Auxiliador() {
   return (
     <>
@@ -20,4 +14,3 @@ export default function Auxiliador() {
     </>
   )
 }
-
