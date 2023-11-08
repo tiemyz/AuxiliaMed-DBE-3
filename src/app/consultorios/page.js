@@ -29,11 +29,11 @@ export default async function Consultorios() {
     <>
       <NavBar active={"consultorios"} />
 
-      <main className="bg-amber-100 min-h-screen flex flex-col items-center gap-y-7 p-10">
-        <div className="bg-slate-300 rounded-xl w-11/12 h-max p-5 flex items-center justify-between">
+      <main className="bg-white min-h-screen flex flex-col items-center gap-y-7 p-10">
+        <div className="bg-red-100 rounded-xl w-11/12 h-max p-5 flex items-center justify-between">
             <img src="/img/image 14.png" alt="Imagem 14" />
 
-            <div id="data" className="bg-red-400 rounded">
+            <div id="data" className="bg-red-100 rounded">
             {consultorios.map(consultorio => <DataRow key={consultorio.id} consultorio={consultorio} />)}
             </div>
         </div>

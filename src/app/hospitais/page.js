@@ -29,11 +29,11 @@ export default async function Hospitais() {
     <>
       <NavBar active={"hospitais"} />
 
-      <main className="bg-amber-100 min-h-screen flex flex-col items-center gap-y-7 p-10">
-        <div className="bg-slate-300 rounded-xl w-11/12 h-max p-5 flex items-center justify-between">
+      <main className="bg-white min-h-screen flex flex-col items-center gap-y-7 p-10">
+        <div className="bg-red-100 rounded-xl w-11/12 h-max p-5 flex items-center justify-between">
             <img src="/img/image 10.png" alt="Imagem 10" />
 
-            <div id="data" className="bg-red-400 rounded">
+            <div id="data" className="bg-red-100 rounded">
             {hospitais.map(hospital => {
               if (hospital.id === 1) {
                 return <DataRow key={hospital.id} hospital={hospital} />;
@@ -43,10 +43,10 @@ export default async function Hospitais() {
             </div>
         </div>
 
-        <div className="bg-slate-300 rounded-xl w-11/12 h-max p-5 flex items-center justify-between">
+        <div className="bg-red-100 rounded-xl w-11/12 h-max p-5 flex items-center justify-between">
             <img src="/img/image 11.png" alt="Imagem 11" />
 
-            <div id="data" className="bg-red-400 rounded">
+            <div id="data" className="bg-red-100 rounded">
             {hospitais.map(hospital => {
               if (hospital.id === 2) {
                 return <DataRow key={hospital.id} hospital={hospital} />;

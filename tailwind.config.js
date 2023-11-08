@@ -15,6 +15,7 @@ module.exports = {
 
       fontFamily: {
         jura: ['Jura', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif']
       },
 
       backgroundImage: {
