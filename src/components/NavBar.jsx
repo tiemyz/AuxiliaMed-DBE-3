@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function NavBar({ active }) {
     return (
         <nav className="flex justify-between text-center items-center bg-white px-10  border-b-2 border-grey-300 h-32">
-
             <div className="flex items-center">
                 <Link href="/">
                     <h1 className="text-black font-bold text-3xl">AuxiliaMed</h1>
@@ -12,7 +11,6 @@ export default function NavBar({ active }) {
             </div>
 
             <ul id="links" className="flex items-center gap-14 text-black font-montserrat text-2xl font-bold">
-
                 <li>
                     <Link className={`hover:text-red-500 ${active === "auxiliador" && "text-black"}`} href="/auxiliador">
                         AUXILIADOR
@@ -24,12 +22,6 @@ export default function NavBar({ active }) {
                         SAÚDE E BEM-ESTAR
                     </Link>
                 </li>
-
-                {/*<li>
-                    <Link className={`hover:text-red-500 ${active === "hospitais" && "text-black"}`} href="/hospitais">
-                        HOSPITAIS
-                    </Link>
-                </li>*/}
 
                 <li>
                     <Link className={`hover:text-red-500 ${active === "hospitais" && "text-black"}`} href="/unidades">

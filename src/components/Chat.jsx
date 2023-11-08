@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState("");
-  const apiKey = "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";
+  const apiKey = "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";
 
   const addMessage = (text, sender) => {
     const newMessage = { text, sender };
@@ -21,7 +21,7 @@ const Chat = () => {
     addMessage(inputMessage, "user");
     setInputMessage("");
 
-    let retryCount = 0;  // Adicionei a declaração de retryCount aqui
+    let retryCount = 0;  
 
     try {
       const makeApiCall = async () => {
@@ -38,10 +38,9 @@ const Chat = () => {
         });
 
         if (response.status === 429) {
-          // Aguarde um tempo antes de tentar novamente (exponencialmente crescente)
-          await new Promise(resolve => setTimeout(resolve, 2 ** retryCount * 1000)); // Aguarde 2, 4, 8, 16, ... segundos
+          await new Promise(resolve => setTimeout(resolve, 2 ** retryCount * 1000)); 
           retryCount += 1;
-          return makeApiCall(); // Tente novamente
+          return makeApiCall(); 
         }
 
         if (!response.ok) {
@@ -59,7 +58,6 @@ const Chat = () => {
         addMessage(reply, "bot");
       };
 
-      // Chame a função makeApiCall inicialmente
       await makeApiCall();
     } catch (error) {
       console.error("Erro ao enviar mensagem para o ChatGPT:", error);

@@ -27,8 +27,7 @@ export default async function Upa() {
 
   return (
     <>
-      <NavBar active={"upa"} />
-
+      <NavBar active={"upa"}/>
       <main className="bg-white min-h-screen flex flex-col items-center gap-y-7 p-10">
         <div className="bg-red-100 rounded-xl w-7/12 h-max p-5 flex items-center justify-between">
             <img src="/img/image 35.png" alt="Imagem 14" />
@@ -44,8 +43,7 @@ export default async function Upa() {
         </div>
 
         <div className="bg-red-100 rounded-xl w-7/12 h-max p-5 flex items-center justify-between">
-            <img src="/img/image 36.png" alt="Imagem 14" />
-
+            <img src="/img/image 36.png" alt="Imagem 14"/>
             <div id="data" className="bg-red-100 rounded">
             {upa.map(upa => {
               if (upa.id === 2) {
@@ -56,10 +54,8 @@ export default async function Upa() {
             </div>
         </div>
 
-
         <div className="bg-red-100 rounded-xl w-7/12 h-max p-5 flex items-center justify-between">
-            <img src="/img/image 37.png" alt="Imagem 14" />
-
+            <img src="/img/image 37.png" alt="Imagem 14"/>
             <div id="data" className="bg-red-100 rounded">
             {upa.map(upa => {
               if (upa.id === 3) {
@@ -70,7 +66,7 @@ export default async function Upa() {
             </div>
         </div>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 }

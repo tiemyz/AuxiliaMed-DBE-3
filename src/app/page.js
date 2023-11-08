@@ -10,8 +10,7 @@ export default function Home() {
       <NavBar/>
       <Banner/>
       <HomeOptions/>
-      <Footer />
+      <Footer/>
     </>
   )
 }
-
