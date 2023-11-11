@@ -10,5 +10,3 @@ Plataforma web voltada ao auxílio de pessoas idosas, com o objetivo de facilita
 ##### RM93960 - Isabella Piola Fernandes -> **2TDSR**
 ##### RM95145 - Isabella Tiemy Hatamia Silva
 ##### RM94222 - Lethycia Moraes Maia
----
-**Link da API do projeto:** https://github.com/tiemyz/AuxiliaMedAPI
